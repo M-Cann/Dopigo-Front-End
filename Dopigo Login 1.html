@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="Style.css">
+	<title>Dopigo Front End Challenge</title>
+</head>
+
+<body>
+	<div class="rectangle1">
+		<div class="rectangle2">
+			<span class="circle">
+				<p style="color: #ffffff;">1</p>
+			</span>
+			<span class="circle" style="background-color: #ecebef;">
+				<p>2</p>
+			</span>
+
+			<p class="headerstyle">Give us some basic information</p>
+			<p id="subtitle">To start off. Please enter main contact name, email address and password</p>
+		</div>
+
+		<div class="rectangle3">
+			<div class="rectangle5" id="steps">
+				<p class="headerstyle">Step 1</p>
+			</div>
+			<form>
+				<div class="rectangle4">
+					<label>Main Contact Name</label><br>
+					<input type="text" name="name" placeholder="  eg. Johnsmith">
+				</div>
+				<div class="rectangle4">
+					<label>Email Address</label><br>
+					<input type="text" name="email" placeholder="  eg. Johnsmith@mybusiness.com">
+				</div>
+				<div class="rectangle4">
+					<label>Password</label><br>
+					<input type="password" name="password" placeholder="  Password must be at least 8 characters">
+				</div>
+				<div class="rectangle4">
+					<label id="visible">a</label><br>	
+					<input type="password" name="password" placeholder="  Confirm Password">
+				</div>
+				<div class="rectangle4">	
+					<input class="button" id="continueButton" type="button" onclick="contin()" value="Continue">
+				</div>
+			</form>
+		</div>
+	</div>
+	<script>
+		function contin() {
+  			location.href = "Dopigo Login 2.html";
+		}
+	</script>
+</body>
+</html>
