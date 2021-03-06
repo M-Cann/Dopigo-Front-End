@@ -1,0 +1,137 @@
+$textColor: #9996a1;
+$headerColor: #49474e;
+$buttonColor: #695a96;
+$mainColor: #e7e7ec;
+$containerColor: white;
+$inputBorderColor: #f1f0f2;
+$font: Noto Sans, sans-serif;
+
+$inputSize: 11px;
+$textSize: 13px;
+$headerSize: 17px;
+$circleSize: 38px;
+$buttonHeight: 35px;
+$tyHeaderSize: 30px;
+
+body{
+    background-color: $mainColor;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: $font;
+    color: $textColor;
+    font-size: $textSize;
+
+    .container{
+	    background-color:  $containerColor;
+        box-shadow: 0px 0px 50px #d1d1d4;
+        height: 70vh;
+        border-radius: 12px 12px 12px 12px;
+    }
+
+    .circle{
+        margin: 8px;
+        display: inline-block;
+        height: $circleSize;
+	    width: $circleSize;	
+        line-height: $circleSize;	
+	    border-radius: 50%;
+        text-align: center;
+        font-size: $headerSize;
+    }
+
+    input, select{
+	    width: 100%;
+        height: 80%;
+	    border: 1px solid $inputBorderColor;
+	    border-radius: 3px;	
+        font-size: $inputSize;
+        color: $textColor;
+    }
+
+    #header{
+        color: $headerColor;
+        font-size: $headerSize;
+    }
+
+    #tyheader{
+        color: $buttonColor;
+        font-size: $tyHeaderSize;
+    }
+
+    #selectedCircle{
+        background-color: $buttonColor;
+        
+        p{
+            color: $containerColor;
+        }
+    }
+
+    #unSelectedCircle{
+        background-color: $mainColor;
+    }
+
+    #buttonContinue{
+        background-color: $buttonColor;
+        color: $containerColor;
+        height: $buttonHeight;
+    }
+
+    #buttonBack{
+        background-color: $containerColor;
+        color: $textColor;
+        height: $buttonHeight;
+    }
+
+    ::placeholder{
+        color: $textColor;
+    }
+
+    #align{
+        height: 70px;
+    }
+}
+
+$width: 767px;
+$height: 770px;
+@media (max-width: $width, ) {
+    body{
+        display: grid;
+        .container{
+            height: min-content;
+        }
+    }
+
+    #buttonContinue{
+        margin-bottom: 8px;
+    }
+
+    #buttonBack{
+        margin-bottom: 8px;
+    }
+
+    #align{
+        height: fit-content;
+    }
+}
+
+@media (max-height: $height) {
+    body{
+        display: grid;
+        .container{
+            height: min-content;
+        }
+    }
+    #buttonContinue{
+        margin-bottom: 8px;
+    }
+
+    #buttonBack{
+        margin-bottom: 8px;
+    }
+
+    #align{
+        height: fit-content;
+    }
+}
