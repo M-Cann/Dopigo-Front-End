@@ -39,6 +39,7 @@ body{
 	    border-radius: 50%;
         text-align: center;
         font-size: $headerSize;
+        margin-top: 170px;
     }
 
     input, select{
@@ -95,7 +96,7 @@ body{
 
 $width: 767px;
 $height: 770px;
-@media (max-width: $width, ) {
+@media (max-width: $width) {
     body{
         display: grid;
         .container{
